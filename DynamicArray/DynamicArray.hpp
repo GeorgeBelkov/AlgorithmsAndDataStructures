@@ -14,8 +14,8 @@ public:
     DynamicArray(): bufferSize(0), realSize(0), buffer(nullptr) { }
     ~DynamicArray() { delete[] buffer; }
 
-    // перегрузка операторов []
     double GetAt(unsigned int index) const;
+    double operator[] (unsigned int index) const { return GetAt(index); }
 
     void Add(double element);
 };

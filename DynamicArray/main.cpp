@@ -14,7 +14,7 @@ int main()
 
     for (size_t i = 0; i < 5; i++)
     {
-        std::cout << array.GetAt(i) << " ";
+        std::cout << array[i] << " ";
     }
 
     return 0;
