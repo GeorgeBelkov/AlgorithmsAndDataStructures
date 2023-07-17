@@ -10,8 +10,8 @@ public:
     int& operator*() const { return *ptr; }
     int* get() const { return ptr; }
 
-    void reset(int* newptr) { this->ptr = newptr; }
-    int release();
+    void reset(int* newptr);
+    int* release();
 
 private:
     ScopedPtr(const ScopedPtr& ptr);
